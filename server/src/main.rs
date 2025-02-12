@@ -46,7 +46,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 }
 
                 // Handle the TcpStream (connection) using a thread from the thread pool
-                pool.execute(/* move? */ || tcp::handle_tcp_stream(tcp_stream));
+                pool.execute(move || tcp::handle_tcp_stream(tcp_stream));
             }
             Err(e) => {
                 println!("ERROR (MAIN): TcpStream Error: {}", e)

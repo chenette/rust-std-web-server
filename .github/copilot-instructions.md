@@ -1,0 +1,1 @@
+Only use the `std` library for this project. Do not use any external packages or libraries in your suggestions. Do not suggest any code that uses external rust packages that are not `std`.
